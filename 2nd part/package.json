@@ -1,0 +1,16 @@
+{
+  "name": "unroll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "unroll.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^0.34.0",
+    "typescript": "^5.0.0"
+  }
+}
