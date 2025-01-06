@@ -1,0 +1,30 @@
+1. Purpose of React Router:
+React Router enables navigation between different views in React applications without page reloads. It manages the URL and synchronizes the UI with the current route.
+
+2. Single Page Application (SPA):
+A web app that loads once and dynamically updates content without full page reloads. All routing happens on the client side, with JavaScript handling view changes.
+
+3. Client-side vs Server-side Routing Differences:
+Client-side routing happens in the browser without server requests. Server-side routing requires new page requests from the server. Client-side maintains state between routes while server-side resets state. Client-side provides faster transitions but requires more initial JavaScript load.
+
+4. Two Ways to Handle Redirects in React Router:
+
+<Navigate to="/path" /> - Use when you need immediate redirects during render
+useNavigate() hook - Use for programmatic redirects after user actions or events
+Handling Page-Not-Found:
+
+5. Create a catch-all route with path="*" at the bottom of routes
+Use a custom 404 component that displays when no routes match
+Grabbing URL Parameters:
+Use the useParams() hook from React Router to access URL parameters. Example: for route /user/:id, use const { id } = useParams()
+
+6. React Context:
+Context provides a way to pass data through the component tree without manually passing props. Use it for global data like themes, user authentication, or language preferences that many components need.
+
+7. Class vs Function Components:
+Function components are simpler, more concise, and use hooks for state and lifecycle features. Class components use lifecycle methods and require more boilerplate code. Function components are now preferred in modern React.
+
+8. Problems Hooks Solve:
+Hooks solve code reuse between components. They eliminate the confusion of this binding. They make state management simpler in function components. They reduce the complexity of lifecycle methods. They help organize related code together instead of splitting it across different lifecycle methods. They remove the need for class components. They make it easier to share stateful logic between components.
+
+
